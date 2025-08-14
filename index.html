@@ -1,84 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Happy Birthday</title>
-</head>
-<body>
+  </head>
+  <body>
+    <audio id="background-music" src="./banda-neira_sampai-jadi-debu.mp3" loop muted></audio>
     <section id="one">
-        <div class="hero">
-            <div class="in-container">
-                <p class="hey">
-                    Hey Beautiful
-                </p>
-            </div>
-            <div class="in-container">
-                <p class="hap">
-                    HAPPY BIRTHDAY
-                </p>
-            </div>
-            <div class="in-container">
-                <p class="i">
-                    I didn't know what to gift you because I don't have much money.
-                </p>
-            </div>
-            <div class="in-container">
-                <p class="so">
-                    So... I made you this website.
-                </p>
-            </div>
+      <div class="hero">
+        <div class="in-container">
+          <p class="hey">Hey Jovanka!</p>
         </div>
+        <div class="in-container">
+          <p class="hap">HAPPY BIRTHDAY</p>
+        </div>
+        <div class="in-container">
+          <p class="i">I didn't know how to celebrate so you won't forget it.</p>
+        </div>
+        <div class="in-container">
+          <p class="so">So... I made you this, hopefully u like it.</p>
+        </div>
+        <button id="mute-button">Click Here to Play Audio! 🔉</button>
+      </div>
     </section>
-    <div class="trans-p-c">
-
-    </div>
+    <div class="trans-p-c"></div>
     <section class="two">
-        <div class="container-cotton">
-            <p>
-                It's been exactly
-            </p>
-            <div class="clock-holder">
-                <font id="days"></font>
-                <font>:</font>
-                <font id="hours"></font>
-                <font>:</font>
-                <font id="minutes"></font>
-                <font>:</font>
-                <font id="seconds"></font>
-            </div>
-            <p>
-                since the first time, I saw you walk out of that classroom. And I want to keep seeing you till my last breath.
-            </p>
+      <div class="container-cotton">
+        <p>It's been exactly</p>
+        <div class="clock-holder">
+          <font id="days"></font>
+          <font>:</font>
+          <font id="hours"></font>
+          <font>:</font>
+          <font id="minutes"></font>
+          <font>:</font>
+          <font id="seconds"></font>
         </div>
+        <p>Since the first time we know each other (maybe? 😆).</p>
+      </div>
     </section>
-    <div class="trans-c-l">
-
-    </div>
+    <div class="trans-c-l"></div>
     <section id="three">
-        <div class="container-lum">
-            <img src="./BORI.jpg" alt="" class="bori"/>
-            <img src="./vecteezy_black-heart-line-png-file_20945974_746.png" alt="" class="love"/>
-            <video width="400px" height="400px" controls="controls">
-            <source src="./Ghost.mp4" type="video/mp4" />
-        </div>
-        <div class="container-lum">
-            <p>
-                "You're not easygoing, but you're passionate, and that's good. And when you get upset about the little things, I think that I'm pretty good about making you feel better about that. And that's good, too. So, they can say that you're high-maintenance, but it's OK because I like maintaining you."
-                <br/><br/> — Chandler
-                            </p>
-        </div>
+      <div class="container-lum">
+        <img src="./first_meet.png" alt="" class="bori" />
+        <img src="./line_1.png" alt="" class="love" />
+        <img src="./amity.png" style="height: 400px; width: 400px" alt="" class="video" />
+        <!-- <video width="400px" heigiht="400px" controls="controls">
+            <source src="./Ghost.mp4" type="vdeo/mp4" /> -->
+      </div>
+      <div class="container-lum">
+        <p>
+          It's nice, this is the first time we've hang out together..<br /><br />
+          Keep on scrolling. There is a suprise waiting....
+        </p>
+      </div>
     </section>
-    <div class="trans-l-p">
-
-    </div>
+    <div class="trans-l-p"></div>
     <section id="four">
-        <div class="container">
+      <!-- <div class="container">
             <p>
                 I select a song for you.<br/><br/>
-                Play it and keep on scrolling love. There is a suprise waiting....
+                Play it and keep on scrolling. There is a suprise waiting....
             </p>
             <div>
                 <video width="400px" height="250px" controls="controls">
@@ -87,19 +72,20 @@
             <p>
                 Rex Orange County - Best Friend
             </p>
-        </div>
-        <div class="container">
+        </div> -->
+      <!-- <div class="container">
+        
             <p>
                 Each card has unique suprises. You can only choose one.<br/>
-                So, choose carefully baby...
+                So, choose carefully Chiko...
             </p>
             <div class="card-container">
                 <div class="card" onclick="cardSelected(this)">
                     <h2>
-                        Massage
+                        Gift 1
                     </h2>
                     <p>
-                        Anywhere Anytime personal massager.
+                        First Gift.
                     </p>
                     <font>
                         ?
@@ -107,10 +93,10 @@
                 </div>
                 <div class="card" onclick="cardSelected(this)">
                     <h2>
-                        Chef
+                        Gift 2
                     </h2>
                     <p>
-                        Personal 3-star Michelin chef will cook anything you want.
+                        Second Gift.
                     </p>
                     <font>
                         ?
@@ -118,54 +104,94 @@
                 </div>
                 <div class="card" onclick="cardSelected(this)">
                     <h2>
-                        Butler
+                        Gift 3
                     </h2>
                     <p>
-                        Anything you want I am at your service, my wife.
+                        Third Gift.
                     </p>
                     <font>
                         ?
                     </font>
                 </div>
             </div>
+        </div> -->
+      <div class="container">
+        <p>
+          Each card has unique suprises. You can only choose one.<br />
+          So, choose carefully Chiko...
+          <br />
+          <br />
+          Note: Surprise will be true if u open this at 17 August 2025!<br />
+        </p>
+        <div class="card-container">
+          <div class="card" onclick="cardSelected(this)">
+            <h2>Gift 1</h2>
+            <p>First Gift.</p>
+            <font> ? </font>
+          </div>
+          <div class="card" onclick="cardSelected(this)">
+            <h2>Gift 2</h2>
+            <p>Second Gift.</p>
+            <font> ? </font>
+          </div>
+          <div class="card" onclick="cardSelected(this)">
+            <h2>Gift 3</h2>
+            <p>Third Gift.</p>
+            <font> ? </font>
+          </div>
         </div>
+        <button id="sendButton" class="submit-button" onclick="sendMessage()">Submit!</button>
+      </div>
     </section>
 
-    <div class="trans-p-la">
-
-    </div>
+    <div class="trans-p-la"></div>
     <section id="five">
-        <div class="container-cotton">
-            <p class="birthday-wishes">
-                Happy Birthday to the amazing soul who graced my life with her presence! 🎉🎂 Your special day is a reminder of the incredible journey we've shared and the beautiful moments that lie ahead.<br/><br/>
+      <div class="container-cotton">
+        <h1>Here is my wishes for u!</h1>
+        <p class="birthday-wishes">
+          <br /><br />
+          Happy Birthday, Jovanka! 🎉🎂<br /><br />
 
-From the moment we met, your laughter has been the melody that dances in my heart, and your kindness has been the anchor that grounds my soul. As you embark on another year of your life's adventure, I hope it is the best year you ever had yet. May you continue to spread your infectious joy to everyone you meet, just as you've illuminated my life with your radiant smile.<br/><br/>
+          On your special day, I wanted to take a moment to tell you how grateful I am to know you in this life. <br /><br />
+          Your laugh is adorable, as is your innocence. Thank you for being such an amazing person I've ever known.<br /><br />
 
-Here's to celebrating your dreams, your accomplishments, and the incredible person you are. May your wishes come true like magic, and may your heart always be surrounded by the warmth of love and the support of those who cherish you.<br/><br/>
+          I hope this new year of your life is the best one yet, filled with unforgettable memories, get 4.0 for ur IPK (hopefully 😁) and may your wishes come true this year.<br /><br />
+          Cheers to celebrating the wonderful person you are today and every day! 🥳❤️🎈
+        </p>
+      </div>
+      <div class="container-cotton">
+        <p>
+          There is a cake ofc!<br />
+          Here is the rules for the cake:<br /><br />
+          1. Open button below 👆<br />
+          2. Allow the microphone! 🎙️<br />
+          3. Click at the cake 19 times 🎂 (ur age, cmiiw)<br />
+          4. Make a wish 🌠<br />
+          6. Blow the keyboard! 🌬️<br /><br />
+          Go, shorty<br />
+          It's your birthday<br />
+        </p>
+        <a href="https://ininick.github.io/birthday-cake/" target="_blank" style="text-decoration: none">
+          <button class="cake-button">
+            <span class="cake-button-text">Show me the cake 🎂!</span>
+          </button>
+        </a>
+        <p>
+          There is still last section Jo! Scroll it! 😉
+          <br />
+          But click the cake first! 👆
+        </p>
+        <p class="last-message">
+          Finally you've read it all! 🎉 <br />
+          <br /><br /><br /><br />
 
-Thank you for being the person you are and for sharing your beautiful soul with me. Cheers to celebrating the wonderful you on this special day and every day that follows. Happy Birthday, my love! 🎈❤️🥳
-            </p>
-        </div>
-        <div class="container-cotton">
-            <p>
-                I make the best cake you will ever find, just for you!<br/>
-                Blow the candle love....<br/><br/>
-                Go, shorty<br/>
-It's your birthday<br/>
-            </p>
-            <img src="./Untitled.png" alt="" class="cake"/>
-
-            <p>
-                That's right! your are choki from now.
-            </p>
-        </div>
-        <div class="container-cotton">
-            <p>
-                Make with ❤ by Virus
-            </p>
-        </div>
+          Consider this a farewell 👋.<br />
+          I'm so grateful we ever met, even if only for a moment ⏳. May your life be a beautiful story filled with joy and blessings. 🌟<br /><br />
+          Good bye, Jovanka!<br />
+        </p>
+      </div>
     </section>
 
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
