@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       audio.play();
     } else {
       audio.muted = true;
-      button.textContent = 'Click Here to Play Audio! 🔉';
+      button.textContent = 'Nda jadi ribut, hehe! 😁';
     }
   });
 });
